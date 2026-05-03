@@ -30,6 +30,21 @@ El módulo **formacion_continua** permite:
    - Vista de formulario (detalle de cada acción)
    - Vista de calendario (cronograma de acciones)
    - Vista de búsqueda (filtros y búsquedas avanzadas)
+  
+
+## 📸 Capturas del módulo
+
+### Vista del módulo
+![Módulo](imagenes/modulo.png)
+
+### Lista de cursos
+![Lista cursos](imagenes/lista cursos existentes.png)
+
+### Creación de curso
+![Crear curso](imagenes/creacion curso.png)
+
+### Asignar empleado
+![Empleado](imagenes/agregar empleado a formacion.png)
 
 ---
 
