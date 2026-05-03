@@ -37,14 +37,14 @@ El módulo **formacion_continua** permite:
 ### Vista del módulo
 ![Módulo](imagenes/modulo.png)
 
-### Lista de cursos
-![Lista cursos](imagenes/lista cursos existentes.png)
-
 ### Creación de curso
-![Crear curso](imagenes/creacion curso.png)
+![Crear curso](imagenes/creacion_curso.png)
+
+### Lista de cursos
+![Lista cursos](imagenes/lista_cursos_existentes.png)
 
 ### Asignar empleado
-![Empleado](imagenes/agregar empleado a formacion.png)
+![Empleado](imagenes/agregar_empleado_a_formacion.png)
 
 ---
 
