@@ -32,7 +32,7 @@ El módulo **formacion_continua** permite:
    - Vista de búsqueda (filtros y búsquedas avanzadas)
   
 
-## 📸 Capturas del módulo
+## Capturas del módulo
 
 ### Vista del módulo
 ![Módulo](imagenes/modulo.png)
