@@ -1,0 +1,6 @@
+<odoo>
+    <record id="group_formacion_usuario" model="res.groups">
+        <field name="name">Usuario Formación</field>
+        <field name="category_id" ref="base.module_category_human_resources"/>
+    </record>
+</odoo>

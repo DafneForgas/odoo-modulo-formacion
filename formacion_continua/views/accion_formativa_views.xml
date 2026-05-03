@@ -1,0 +1,94 @@
+<odoo>
+
+    <!-- =========================
+         VISTA LISTA (TREE)
+    ========================== -->
+    <record id="view_accion_formativa_tree" model="ir.ui.view">
+        <field name="name">formacion.accion.list</field>
+        <field name="model">formacion.accion</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="formador_id"/>
+                <field name="horas_totales"/>
+                <field name="num_sesiones"/>
+            </list>
+        </field>
+    </record>
+
+
+    <!-- =========================
+         VISTA FORMULARIO
+    ========================== -->
+    <record id="view_accion_formativa_form" model="ir.ui.view">
+        <field name="name">formacion.accion.form</field>
+        <field name="model">formacion.accion</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+
+                    <group>
+                        <field name="name"/>
+                        <field name="formador_id"/>
+                    </group>
+
+                    <group>
+                        <field name="horas_totales"/>
+                        <field name="horas_sesion"/>
+                        <field name="num_sesiones" readonly="1"/>
+                    </group>
+
+                    <group>
+                        <field name="participante_ids" widget="many2many_tags"/>
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- =========================
+         VISTA BÚSQUEDA
+    ========================== -->
+    <record id="view_accion_formativa_search" model="ir.ui.view">
+        <field name="name">formacion.accion.search</field>
+        <field name="model">formacion.accion</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="formador_id"/>
+
+                <filter string="Con formador"
+                        name="con_formador"
+                        domain="[('formador_id','!=',False)]"/>
+            </search>
+        </field>
+    </record>
+
+
+    <!-- =========================
+         VISTA CALENDARIO
+    ========================== -->
+    <record id="view_accion_formativa_calendar" model="ir.ui.view">
+        <field name="name">formacion.accion.calendar</field>
+        <field name="model">formacion.accion</field>
+        <field name="arch" type="xml">
+            <calendar date_start="fecha_inicio" string="Acciones Formativas">
+                <field name="name"/>
+                <field name="formador_id"/>
+            </calendar>
+        </field>
+    </record>
+
+
+    <!-- =========================
+         ACCIÓN
+    ========================== -->
+    <record id="action_formacion" model="ir.actions.act_window">
+        <field name="name">Acciones Formativas</field>
+        <field name="res_model">formacion.accion</field>
+        <field name="view_mode">list,form,calendar</field>
+    </record>
+
+</odoo>

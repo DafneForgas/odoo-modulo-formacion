@@ -1,0 +1,9 @@
+<odoo>
+    <menuitem id="menu_formacion_root" name="Formación" sequence="100"/>
+    
+    <menuitem id="menu_formacion_acciones"
+              name="Acciones Formativas"
+              parent="menu_formacion_root"
+              action="action_formacion"
+              sequence="10"/>
+</odoo>
